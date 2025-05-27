@@ -8,16 +8,49 @@
 </head>
 
 <body>
-    <h2>Task 1: Random Number Guessing game</h2>
+    <div>
+        <h2>Task 1: Random Number Guessing game</h2>
 
-    <p>Enter a number between 1 and 10:</p>
+        <label>Enter a number between 1 and 10:</label><br>
+        <input type="number" id="guessInput" min="1" max="10" />
+        <button onclick="numberInput()">Guess</button>
 
-    <input type="number" id="guessInput" min="1" max="10" />
-    <button onclick="numberInput()">Guess</button>
+        <h3>Result:</h3>
 
-    <p id="result"></p>
+        <script src="random.js"></script>
+    </div>
 
-    <script src="random.js"></script>
+    <div>
+        <h2>Task 2: String Analyzer</h2>
+
+        <label>Enter a sentence:</label><br>
+        <input type="text" id="sentence">
+        <button onclick="analyzeString()">Analyze</button>
+
+        <h3>Results:</h3>
+        <p id="characterCount"></p>
+        <p id="wordCount"></p>
+        <p id="containsJS"></p>
+
+        <script src="stringAnalizer.js"></script>
+
+    </div>
+
+    <div>
+        <h2>Task 3: Math Function Application</h2>
+
+        <label>Enter three numbers:</label><br>
+        <input type="text" id="numbers">
+        <button onclick="mathFunction()">Analyze</button>
+
+        <h3>Results:</h3>
+        <p id="smallest"></p>
+        <p id="largest"></p>
+        <p id="average"></p>
+
+        <script src="mathFunction.js"></script>
+
+    </div>
 
 </body>
 
