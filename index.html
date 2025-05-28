@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David JS04</title>
+</head>
+
+<body>
+    <div>
+        <h2>Task 1: Random Number Guessing game</h2>
+
+        <label>Enter a number between 1 and 10:</label><br>
+        <input type="number" id="guessInput" min="1" max="10" />
+        <button onclick="numberInput()">Guess</button>
+
+        <h3>Result:</h3>
+
+        <script src="random.js"></script>
+    </div>
+
+    <div>
+        <h2>Task 2: String Analyzer</h2>
+
+        <label>Enter a sentence:</label><br>
+        <input type="text" id="sentence">
+        <button onclick="analyzeString()">Analyze</button>
+
+        <h3>Results:</h3>
+        <p id="characterCount"></p>
+        <p id="wordCount"></p>
+        <p id="containsJS"></p>
+
+        <script src="stringAnalizer.js"></script>
+
+    </div>
+
+    <div>
+        <h2>Task 3: Math Function Application</h2>
+
+        <label>Enter three numbers:</label><br>
+        <input type="text" id="numbers">
+        <button onclick="mathFunction()">Analyze</button>
+
+        <h3>Results:</h3>
+        <p id="smallest"></p>
+        <p id="largest"></p>
+        <p id="average"></p>
+
+        <script src="mathFunction.js"></script>
+
+    </div>
+
+    <div>
+        <h2>Task 4: Random Password Generator</h2>
+
+        <button onclick="generatePass()">Generate</button>
+        <p id="generated"></p>
+
+        <script src="passGenerator.js"></script>
+
+    </div>
+
+    <div>
+        <h2>Task 5: Age Group Clasifier</h2>
+
+        <label>Enter your age:</label><br>
+        <input type="text" id="ageInput" />
+        <button onclick="ageGroupCasssifier()">Check</button>
+
+        <h3>Result:</h3>
+
+        <p id="ageGroupResult"></p>
+
+        <script src="ageGroupClassifier.js"></script>
+
+    </div>
+
+</body>
+
+</html>
